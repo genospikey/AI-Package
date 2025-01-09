@@ -30,7 +30,7 @@ This will set up the following magical creatures:
 - **Searxing:** A meta search engine that will power your AI server's search functionality.
 - **Open Webui:** An interface for creating and chatting with AI models.
 
-**Step 5: Install Automatic1111**
+**Step 5: Download Automatic1111 Files**
 
 Automatic1111 is a stable diffusion server that will generate stunning images. To install it, run the following command in the same folder:
 
@@ -38,7 +38,17 @@ Automatic1111 is a stable diffusion server that will generate stunning images. T
 docker compose --profile download up --build
 ```
 
-**Step 6: Connect Open Webui to Searxing and Automatic1111**
+Wait a while... then your're done. Eventually.
+
+**Step 6: Creat Automatic1111 Container**
+
+To create the Docker container for Automatic1111, run the following command in the same folder (this can be auto/auto-cpu/comfy/comfy-cpu go look at the docs):
+
+```
+docker compose --profile auto up --build
+```
+
+**Step 7: Connect Open Webui to Searxing and Automatic1111**
 
 Open Webui needs to be connected to Searxing and Automatic1111 to function properly. You can do this by following these steps:
 
